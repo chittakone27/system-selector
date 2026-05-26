@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DHIS2 System Portal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: "Noto Sans Lao", Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #e8f3ff, #d6e9ff);
+    color: #1a3b5d;
+}
+
+.container {
+    text-align: center;
+    padding: 60px 40px;
+    border-radius: 18px;
+
+    background: white;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+
+    max-width: 850px;
+    width: 90%;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+    color: #2a6ebb;
+}
+
+.subtitle {
+    font-size: 16px;
+    opacity: 0.75;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.btn {
+    display: block;
+    padding: 20px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #1a3b5d;
+
+    background: #f5faff;
+    border: 1px solid #d6e9ff;
+
+    transition: all 0.25s ease;
+}
+
+.btn:hover {
+    background: #2a6ebb;
+    color: white;
+    transform: translateY(-4px);
+}
+
+.en {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.lo {
+    display: block;
+    font-size: 13px;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+    <h1>DHIS2 System Portal</h1>
+    <div class="subtitle">ກະລຸນາເລືອກລະບົບ / Select a system</div>
+
+    <div class="grid">
+
+        <a class="btn" href="/hfml">
+            <span class="en">HFML</span>
+            <span class="lo">ລະບົບຂໍ້ມູນໂຄງຮ່າງພື້ນຖານສາທາລະນະສຸກ</span>
+        </a>
+
+        <a class="btn" href="/cdn">
+            <span class="en">CDN</span>
+            <span class="lo">ລະບົບການແຈ້ງເສຍຊີວິດໃນເຂດຊຸມຊົນ</span>
+        </a>
+
+        <a class="btn" href="/climate">
+            <span class="en">Climate</span>
+            <span class="lo">ລະບົບຂໍ້ມູນສະພາບດິນຟ້າອາກາດ</span>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
